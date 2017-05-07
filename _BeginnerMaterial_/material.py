@@ -34,6 +34,8 @@ print("6 / 2 =", 6/2)
 print("7 % 2 =", 7%2)
 print("2 ** 2 =", 2**2)
 print("9 // 2 =", 9//2)
+print("5 / 2.0 =", 5/2.0)
+print("5 + 3 * 2 / 6 - 4 =", 5+3*2/6-4)
 
 #  * and / are always performed before + and -
 
