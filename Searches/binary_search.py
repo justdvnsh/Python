@@ -19,7 +19,7 @@ def bsearch(array, item):
 
 def main():
     start_time = timeit.default_timer()
-    values = [1, 10, 45]
+    values = [1, 10, 45, 99, 100, 18, 3, 657, 526, 97, 33, 31, 25]
     result = bsearch(values, 45)
     elapsed = (timeit.default_timer() - start_time)
     print(result, "was found")
