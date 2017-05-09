@@ -2,7 +2,7 @@
 
 # functions
 # user input
-# more on string
+# more on strings
 # file input/output
 
 # ----------------------------------------------------------------
