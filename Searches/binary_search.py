@@ -22,7 +22,7 @@ def main():
     values = [1, 10, 45, 99, 100, 18, 3, 657, 526, 97, 33, 31, 25]
     result = bsearch(values, 45)
     elapsed = (timeit.default_timer() - start_time)
-    print(result, "was found")
+    print(result)
     print("Took %s seconds" % (elapsed))
 
 if '__main__' == __name__:
