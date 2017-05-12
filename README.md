@@ -1,4 +1,7 @@
 # Python
+
+Please help grow this repo with commits on any areas of Python you feel confident in, the more help the better it can be!
+
 Learn the high level programming language Python from the ground up with this helpful repository which covers everything between basic numerical operations right up to Data Structures and Algorithms. Commits welcome, must meet [The PEP8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
 
 
@@ -85,10 +88,19 @@ And now your all ready set and go to start learning Python!
 ### Windows
 
 Download preferred python version, there are two version Python 2.#.# and Python 3.#.#, from offical python website and install it.
+Link for [Python.org](www.python.org)
 
 
-### Useful Links
-www.python.org
+### Repository Layout
+
+#### Beginner
+Have a look through the beginner materials. It's key to understand the fundamentals of any language before progressing. Sample questions and solutions will be provided soon, but until then work at applying what you learn with different problems you construct for yourself.
+
+#### Intermediate 
+Once you've had a look at what is covered in the intermediate materials, you can have a look at Searches and the Bubble Selection, Insertion and Binary Insertion Sorting Algorithms in Sorts. Some sample questions will be provided soon.
+
+#### Advanced
+If you've finished the advanced material, check our Data Structures(When I have updated it) and what you didn't cover in Sorts.
 
 
-
+Please help grow this repo with commits on any areas of Python you feel confident in.
