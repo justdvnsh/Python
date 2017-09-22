@@ -1,23 +1,30 @@
-import timeit
 
-
-def linear_search(array, item):
-    for i in array:
-        if i == int(item):
-            return item
-    return "No item ", item, " found"
-
+def linear_search(lst,size,value):
+    i = 0
+    while i < size:
+        if lst[i] == value:
+            return i
+        i = i + 1
+    return -1
 
 def main():
-    start_time = timeit.default_timer()
-    array_of_values = [1, 10, 45, 26, 98, 45, 5, 22, 28, 7, 69, 0, 43, 31, 18]
-    result = linear_search(array_of_values, 10)
-    elapsed = (timeit.default_timer() - start_time)
-    if result == str(result):
-        print(result)
-    else:
-        print(result, "was found")
 
-    print("Took %s seconds" % (elapsed))
-if '__main__' == __name__:
+    lst = [-31, 0, 1, 2, 2, 4, 65, 83, 99, 782]
+    size = len(lst)
+    original_list = ""
+
+    value = int(input("\nInput a value to search for: "))
+    print("\nOriginal Array: ")
+
+    for i in lst:
+        original_list += str(i) + " "
+    print(original_list)
+    print("\nLinear Search Big O Notation:\n--> Best Case: O(1)\n--> Average Case: O(n)\n--> Worst Case: O(n)\n")
+
+    index = linear_search(lst,size,value)
+    if index == -1:
+        print(str(value) + " was not found in that array\n")
+    else:
+        print(str(value) + " was found at index " + str(index))
+if __name__ == '__main__':
     main()
