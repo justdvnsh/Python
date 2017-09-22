@@ -1,29 +1,35 @@
-import timeit
 
-
-def bsearch(array, item):
+def binary_search(lst,size,value):
     low = 0
-    high = len(array)
-    while low < high:
-        mid = (low + high) // 2
-        assert low <= mid < high
-
-        if array[mid] < item:
-            low = mid + 1
-            assert low == 0 or array[low - 1] < item
+    high = size -1
+    while low <= high:
+        middle = (low + high) // 2
+        if lst[middle] == value:
+            return middle
+        elif lst[middle] < value:
+            low = middle + 1
         else:
-            high = mid
-            assert item <= array[high]
-    return a[low]
-
+            high = middle - 1
+    return -1
 
 def main():
-    start_time = timeit.default_timer()
-    values = [1, 10, 45, 99, 100, 18, 3, 657, 526, 97, 33, 31, 25]
-    result = bsearch(values, 45)
-    elapsed = (timeit.default_timer() - start_time)
-    print(result)
-    print("Took %s seconds" % (elapsed))
 
-if '__main__' == __name__:
+    lst = [-31, 0, 1, 2, 2, 4, 65, 83, 99, 782]
+    size = len(lst)
+    original_list = ""
+
+    value = int(input("\nInput a value to search for: "))
+    print("\nOriginal Array: ")
+
+    for i in lst:
+        original_list += str(i) + " "
+    print(original_list)
+    print("\nBinary Search Big O Notation:\n--> Best Case: O(1)\n--> Average Case: O(log n)\n--> Worst Case: O(log n)\n")
+
+    index = binary_search(lst,size,value)
+    if index == -1:
+        print(str(value) + " was not found in that array\n")
+    else:
+        print(str(value) + " was found at index " + str(index))
+if __name__ == '__main__':
     main()
