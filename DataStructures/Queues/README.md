@@ -11,7 +11,7 @@ A queue is easy to find analgoy for, just think of a line of people waiting for 
 
  List operations defined in Python are similar to the operations that define a queue. We can translate queue operations to built in Python operations easily, here are some key queue operations.
 
-##### Key Operations
+#### Key Operations
 
 A `Queue` object has an attribute named `items` (list of items acting as the queue). The `__init__` method sets items as an empty list.
 
@@ -19,7 +19,7 @@ To add a new item to the queue, the `enqueue` method inserts the item to the zer
 
 To check if the queue is empty, the `is_empty` method simply compares the list items to the empty list.
 
-##### Other Operations
+#### Other Operations
 Aside from the aforementioned operations, I've added some more method which allow you to play around with the structure.
 
 The `size` method returns the size of the queue (len(list)).
