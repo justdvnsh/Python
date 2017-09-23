@@ -27,7 +27,7 @@ The search algorithm you implement, in my opinion, is totally dependant on the p
 
 ### Linear Search (Sequential Search)
 
-##### Explanation
+#### Explanation
 
 Linear Search, often called Sequential Search, is a search algorithm. It is one of the most fundamental and important of all algorithms. It is simple to understand and implement, yet there are more subtleties to it than most programmers realise.
 
@@ -35,23 +35,23 @@ The input to linear search is a sequence such as an array plus a target value. T
 
 In simple English, the algorithm sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched.
 
-##### Performance
+#### Performance
 
 In Big O Notation, Linear Search's running times are as follows: Best Case: O(1)), Average Case: O(n), Worst Case: O(n).
 
-##### Advantages
+#### Advantages
 
 Linear Search has a little going for it in terms of design. It's simple and easy to remember. Linear Search can work quite efficiently on small data sets and due to how little writing it takes to implement, it can be seen as a more favourable option compared to other algorithms when dealing with such sequences.
 
 
-##### Disadvantages
+#### Disadvantages
 
 In practice, this algorithm is very slow when compared to other search algorithms like Binary Search, and Hashing. Along with this, the algorithm has is less efficient and performs poorly when working with medium - large sized sequences.
 
 
 ### Binary Search
 
-##### Explanation
+#### Explanation
 
 The first thing of to note about the algorithm is that it can only work on sorted datasets. If the data is not sorted it will not work. The algorithm finds the mid-point of the array and sets the boundaries of low and high(the start and end of the list respectively). The algorithm compares the array at this middle index to the desired value. If it is equal, the algorithm returns the value.
 
@@ -61,14 +61,14 @@ If the desired value is greater than the element at the middle index, the high b
 
 If the desired value is not present in the array, the algorithm returns -1 to signify this.
 
-##### Performance
+#### Performance
 
 In Big O Notation, Binary Search's running times are as follows: Best Case: O(1)), Average Case: O(log(n)), Worst Case: O(log(n)).
 
-##### Advantages
+#### Advantages
 
 Though people get it wrong frequently, the algorithm is fairly simple in design. The big draw with Binary Search is that, in comparison to Linear Search, Binary Search is much faster. Linear search takes, on average N/2 comparisons (where N is the number of elements in the array), and worst case N comparisons. Binary search takes an average and worst-case log2(N) comparisons.
 
-##### Disadvantages
+#### Disadvantages
 
 The first thing that holds back Binary Search is the whole sorted data idea. It's fine with static lists, but if they aren't static the data needs to be resorted if elements are continuously added to it. This is not always feasible and can be a drawback of the algorithm, as it requires a non-changing environment. The algorithm is is good with small datasets, but it can be considered overkill for a such small structures.
