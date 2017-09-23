@@ -93,10 +93,12 @@ Link for [Python.org](www.python.org)
 
 ### Repository Layout
 
+This repository has three main sections (detailed below) and also includes sections on Data Structures, Algorithms, etc.
+
 #### LearningMaterials1 - Beginner
 Have a look through the beginner materials. It's key to understand the fundamentals of any language before progressing. Sample questions and solutions will be provided soon, but until then work at applying what you learn with different problems you construct for yourself.
 
-#### LearningMaterials2 - Intermediate 
+#### LearningMaterials2 - Intermediate
 Once you've had a look at what is covered in the intermediate materials, you can have a look at Searches and the Bubble Selection, Insertion and Binary Insertion Sorting Algorithms in Sorts. Some sample questions will be provided soon.
 
 #### LearningMaterials3 - Advanced
