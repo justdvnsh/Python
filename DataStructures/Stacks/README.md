@@ -1,7 +1,7 @@
 # Stacks
 
 
-### Explanation 
+### Explanation
 
 A stack is a collection, meaning that it is a data structure that contains multiple elements.
 
@@ -11,7 +11,7 @@ A stack is sometimes called a “Last in, First out” or LIFO data structure, b
 
 The list operations that Python provides are not unlike the operations which define a stack. We can write code to translate from the stack to the built-in operations. Some key operations are detailed below.
 
-##### Key Operations
+#### Key Operations
 
 A `Stack` object has an attribute named `items` that is a list of items which acts as the stack. The `__init__` method sets items to an empty list.
 
@@ -19,7 +19,7 @@ To add a new item to the stack, the `push` method appends said item onto items. 
 
 If you want to check if the stack is empty, the `is_empty` method simply compares the list items to the empty list.
 
-##### Other Operations
+#### Other Operations
 Aside from the aforementioned operations, I've added some more method which allow you to play around with the structure.
 
 The `size` method returns the size of the stack (len(list)).
