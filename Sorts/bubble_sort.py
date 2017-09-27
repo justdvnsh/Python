@@ -1,22 +1,24 @@
-import timeit
-def bubble_sort(array):
-    changed = True
-    while changed:
-        changed = False
-        for i in range(len(array) - 1):
-            if array[i] > array[i+1]:
-                array[i], array[i+1] = array[i+1], array[i]
-                changed = True
-    return array
+def bubble_sort(lst,size):
+  for i in range(size):
+    for j in range(size - i - 1):
+      if lst[j] > lst[j + 1]:
+        tmp = lst[j]
+        lst[j] = lst[j + 1]
+        lst[j + 1] = tmp
 
 
 def main():
-    start_time = timeit.default_timer()
-    values = [1, 10, 45, 99, 2, 7, 31, 98, 964, 346, 762]
-    result = bubble_sort(values)
-    elapsed = (timeit.default_timer() - start_time)
-    print(result)
-    print("Took %s seconds" % (elapsed))
+    lst = [10, 7, 3, 9, 18, -4, 67, 32, 0, 21]
+    size = len(lst)
 
-if '__main__' == __name__:
+    print("\nOriginal Array: ")
+    print(lst)
+
+    print("\nSorted Array: ")
+    bubble_sort(lst,size)
+    print(lst)
+
+    print("\nBubble Sort Big O Notation:\n--> Best Case: O(n)\n--> Average Case: O(n^2)\n--> Worst Case: O(n^2)\n")
+
+if __name__ == '__main__':
     main()

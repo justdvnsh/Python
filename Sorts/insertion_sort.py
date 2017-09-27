@@ -1,26 +1,26 @@
-import timeit
-
-def insertion_sort(array):
-    for i in range(1, len(array)):
-
-        current = array[i]
-        position = i
-
-        while position > 0 and array[position-1] > current:
-            array[position] = alist[position-1]
-            position = position - 1
-
-        array[position] = current
-    return array
+def insertion_sort(lst,size):
+  for i in range(1,size):
+    pos = lst[i]
+    j = i - 1
+    while (j > -1) and pos < lst[j]:
+      lst[j + 1] = lst[j]
+      j = j - 1
+    lst[j + 1] = pos
 
 
 def main():
-    start_time = timeit.default_timer()
-    values = [1, 10, 45, 99, 2, 7, 31, 98, 964, 346, 762]
-    result = insertion_sort(values)
-    elapsed = (timeit.default_timer() - start_time)
-    print(result)
-    print("Took %s seconds" % (elapsed))
 
-if '__main__' == __name__:
+    lst = [10, 7, 3, 9, 18, -4, 67, 32, 0, 21]
+    size = len(lst)
+
+    print("\nOriginal Array: ")
+    print(lst)
+
+    print("\nSorted Array: ")
+    insertion_sort(lst,size)
+    print(lst)
+
+    print("\nBubble Sort Big O Notation:\n--> Best Case: O(n)\n--> Average Case: O(n^2)\n--> Worst Case: O(n^2)\n")
+
+if __name__ == '__main__':
     main()
