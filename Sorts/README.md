@@ -114,7 +114,7 @@ In Big O Notation, Insertion Sort's running times are as follows: Best Case: O(n
 
 #### Advantages
 
-As the meme near the top of this page suggests, due to it's elegant recursive design and an efficient average case run time, Quicksort is regarded as quite possibly the best sorting algorithm in practice. Quicksort improves on divide and conquer algorithms like Merge Sort. Unlike Merge Sort, Quicksort is an in-place sorting algorithm which means it require no additional storage. If implemented well, Quicksort can be 2-3 times faster tha Merge Sort and Heap Sort. This is because of the increased simplicity of the inner-most loop operations. Along with this, Quicksort also has the significant advantage in terms of efficiency, faring well when sorting through very large datasets.
+Due to it's elegant recursive design and an efficient average case run time, Quicksort is regarded as quite possibly the best sorting algorithm in practice. Quicksort improves on divide and conquer algorithms like Merge Sort. Unlike Merge Sort, Quicksort is an in-place sorting algorithm which means it require no additional storage. If implemented well, Quicksort can be 2-3 times faster tha Merge Sort and Heap Sort. This is because of the increased simplicity of the inner-most loop operations. Along with this, Quicksort also has the significant advantage in terms of efficiency, faring well when sorting through very large datasets.
 
 #### Disadvantages
 
