@@ -6,7 +6,6 @@ def bubble_sort(lst,size):
         lst[j] = lst[j + 1]
         lst[j + 1] = tmp
 
-
 def main():
     lst = [10, 7, 3, 9, 18, -4, 67, 32, 0, 21]
     size = len(lst)

@@ -20,7 +20,7 @@ def main():
     insertion_sort(lst,size)
     print(lst)
 
-    print("\nBubble Sort Big O Notation:\n--> Best Case: O(n)\n--> Average Case: O(n^2)\n--> Worst Case: O(n^2)\n")
+    print("\nInsertion Sort Big O Notation:\n--> Best Case: O(n)\n--> Average Case: O(n^2)\n--> Worst Case: O(n^2)\n")
 
 if __name__ == '__main__':
     main()

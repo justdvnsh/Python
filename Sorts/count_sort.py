@@ -49,14 +49,5 @@ def counting_sort(collection):
 
 
 if __name__ == '__main__':
-    import sys
-    # For python 2.x and 3.x compatibility: 3.x has not raw_input builtin
-    # otherwise 2.x's input builtin function is too "smart"
-    if sys.version_info.major < 3:
-        input_function = raw_input
-    else:
-        input_function = input
-
-    user_input = input_function('Enter numbers separated by a comma:\n')
-    unsorted = [int(item) for item in user_input.split(',')]
+    unsorted = [10, 7, 3, 9, 18, -4, 67, 32, 0, 21]
     print(counting_sort(unsorted))
