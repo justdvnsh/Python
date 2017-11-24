@@ -1,9 +1,13 @@
 language: python
 python:
-  - "3.5"
-
-script:
-    - "python python-unittest.py"
-
+        - "3.5"
+              - "nightly"
 notifications:
-  email: false
+        email: false
+        before_install:
+                - pip install pep8
+        install:
+              - pip install -r requirements.txt
+        script:
+              - pip install .
+                  - pytest --verbose
