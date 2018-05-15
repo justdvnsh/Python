@@ -105,7 +105,7 @@ print(my_list)
 # file input/output
 # ----------------------------------------------------------------
 
-# overwite or create a file for writing in
+# overwrite or create a file for writing in
 my_file = open("test.txt", "wb")
 
 # get the file mode used
